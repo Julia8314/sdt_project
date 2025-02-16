@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 
 # reading dataset and changing year column to whole number
-df = pd.read_csv('c:/users/user/sdt_project/vehicles_us.csv')
+df = pd.read_csv('vehicles_us.csv')
 df['model_year'] = df['model_year'].fillna(0).astype(int)
 
 # adding titles
